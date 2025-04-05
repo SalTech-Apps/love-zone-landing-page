@@ -1,0 +1,34 @@
+{
+  "source": "./pages/index.html",
+  "scripts": {
+    "start": "concurrently \"npm run dev\" \"parcel --open\"",
+    "prebuild": "rimraf .parcel-cache && rimraf dist",
+    "build": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/index.css && parcel build --no-source-maps",
+    "dev": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/index.css --watch"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "gsap": "^3.12.7",
+    "parcel": "^2.12.0",
+    "posthtml-doctype": "^1.1.1",
+    "posthtml-include": "^2.0.1",
+    "posthtml-modules": "^0.9.1",
+    "tailwindcss": "^3.4.3"
+  },
+  "dependencies": {
+    "browserslist": "^4.23.0",
+    "rimraf": "^5.0.7"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

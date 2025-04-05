@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="icon" href="/assets/images/logo.png" type="image/x-icon" /> -->
+    <title>Agapemate | SalTech Services LLC</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/assets/css/index.css" />
+    <link rel="stylesheet" href="/assets/css/other.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&family=Sniglet:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <include src="./components/header.html"></include>
+
+    <main class="w-full pt-16 md:pt-20">
+      <include src="./components/Hero/index.html"></include>
+      <include src="./components/Benefits/index.html"></include>
+      <include src="./components/StepByStepGuide/index.html"></include>
+      <include src="./components/KeyFeatures/index.html"></include>
+      <include src="./components/Pricing/index.html"></include>
+      <include src="./components/Testimonies/index.html"></include>
+      <include src="./components/Faq/index.html"></include>
+
+      <include src="./components/DownloadAppBanner/index.html"></include>
+    </main>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-16698291433"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-16698291433");
+    </script>
+
+    <!-- FOOTER -->
+    <include src="./components/footer.html"></include>
+  </body>
+</html>

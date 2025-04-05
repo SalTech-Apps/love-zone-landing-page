@@ -1,0 +1,82 @@
+body {
+    color: "#21201F";
+    font-family: "Sniglet", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    background-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Itim", cursive;
+    font-style: normal;
+}
+
+.faq-answer {
+    padding: 0;
+    max-height: 20rem;
+    overflow: hidden;
+    transition: max-height 1s ease, padding 0.9s ease;
+    /* transition: max-height 0.3s ease; */
+
+}
+
+.faq-answer.open {
+    max-height: 500px;
+    padding: 0.5rem 0.8rem;
+}
+
+.openMenu {
+    display: block !important;
+    transition: all 1s ease;
+}
+.carousel-images {
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.carousel-images img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #f08100;
+    box-shadow: 0 6px 12px #f081001f;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.carousel-images img:hover {
+    transform: scale(1.1);
+}
+
+.testimonial-text {
+    text-align: center;
+    width: 50%;
+    transition: opacity 0.3s ease;
+}
+
+.testimonial-text img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid #f08100;
+    box-shadow: 0 24px 24px #f081001f;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-text h4 {
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+.testimonial-text p {
+    font-size: 1rem;
+    color: #555;
+    margin: 10px 0;
+}

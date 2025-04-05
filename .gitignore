@@ -1,0 +1,7 @@
+.cache/
+/node_modules
+output.css
+.parcel-cache
+dist
+
+.firebase/
