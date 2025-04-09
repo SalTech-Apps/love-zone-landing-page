@@ -73,7 +73,7 @@ function updateCarousel() {
     testimonialText.innerHTML = `
         <img src="${testimonial.image}" alt="${
       testimonial.name
-    }" class="transition-transform duration-300">
+    }" class="transition-transform duration-300 object-cover object-center">
         <h4>${testimonial.name}</h4>
         <p>${testimonial.quote}</p>
         <div class="text-amber-500 text-xl">${"⭐".repeat(

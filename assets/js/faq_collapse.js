@@ -16,6 +16,7 @@ function toggleFAQ(element) {
     if (btn !== element) {
       btn.setAttribute("aria-expanded", "false");
       btn.classList.remove("bg-primary", "text-white");
+      element.removeAttribute("style"); 
       btn.querySelector(".faq-icon").textContent = "+";
     }
   });
