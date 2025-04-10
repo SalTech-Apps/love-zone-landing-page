@@ -1,12 +1,21 @@
 <div
   class="mb-6 rounded-xl bg-pink flex gap-x-4 items-center justify-between p-2"
+  
 >
-  <img
-    class="w-24"
-    src="https://res.cloudinary.com/dbr3c0f1q/image/upload/f_auto,q_auto/v1/logos/agapemate/djyx5c6wbenp9nbknocc"
-    alt="Logo"
-  />
-  <h4 class="font-semibold text-white bg-primary px-2 py-1 border-lg rounded-xl">
-    {{title}} | <span class=" italic text-lg font-normal">$ {{subText}} Monthly</span>
-  </h4>
+  <div class="flex gap-x-2 items-center">
+    <div class="h-12 w-12 rounded-full bg-primary flex items-center justify-center">
+      <i class="fa-solid fa-star text-white text-2xl" aria-hidden="true"></i>
+    </div>
+    <h4>Professional</h4>
+  </div>
+  <div class="relative bg-opacity-50 px-3 py-2 rounded-xl border-2 border-primary overflow-hidden"
+    style="position: relative; border-radius: 0.75rem; overflow: hidden;">
+    <div class="absolute inset-0 rounded-xl z-[-1]"
+      style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; border-radius: 0.75rem; z-index: -1; padding: 2px;">
+    </div>
+    <div>{{title}}</div>
+    <div class="italic text-lg font-normal">$ {{subText}}</div>
+    <div class="italic text-lg font-normal">/ month</div>
+  </div>
+
 </div>

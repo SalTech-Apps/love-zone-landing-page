@@ -16,6 +16,7 @@ function toggleFAQ(element) {
     if (btn !== element) {
       btn.setAttribute("aria-expanded", "false");
       btn.classList.remove("bg-primary", "text-white");
+      element.removeAttribute("style"); 
       btn.querySelector(".faq-icon").textContent = "+";
     }
   });
@@ -28,11 +29,14 @@ function toggleFAQ(element) {
     element.setAttribute("aria-expanded", "false");
     element.classList.remove("bg-primary", "text-white");
     element.querySelector(".faq-icon").textContent = "+";
+    element.removeAttribute("style"); 
+
   } else {
     answer.classList.remove("hidden");
     answer.setAttribute("aria-hidden", "false");
     element.setAttribute("aria-expanded", "true");
     element.classList.add("bg-primary", "text-white");
+    element.style.backgroundImage = "linear-gradient(to right, #FF5672, #FE9748)";
     element.querySelector(".faq-icon").textContent = "-";
   }
 }
